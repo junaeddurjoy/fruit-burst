@@ -15,10 +15,37 @@
         }
     </style>
 </head>
-<body class="font text-black">
+<body class="font text-black lg:text-white">
     <header>
         <!-- nav bar -->
         <nav>
+            <!-- options -->
+            <section class="visible lg:invisible">
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                        </label>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black bg-[#F85559]">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                                <input class="rounded-s-[40px] rounded-r-[40px] h-10 w-30 pl-4" type="text" placeholder="Search Here">
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="navbar-center mr-20">
+                        <div class="">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+                    </div>
+                    
+                    </div>
+            </section>
+            <section class="invisible lg:visible">
             <div class="grid grid-cols-1 lg:grid-cols-3 m-10 items-center h-20 bg-[#F85559] rounded-s-[40px] rounded-r-[40px]	">
                 <div class="grid grid-cols-4 gap-2 pl-6 lg:pl-10 pt-7 lg:pt-0">
                     <div>Home</div>
@@ -38,6 +65,7 @@
                     <input class="rounded-s-[40px] rounded-r-[40px] h-10 w-60 pl-4" type="text" placeholder="Search Here">
                 </div>
             </div>
+            </section>
         </nav>
         <!-- header part -->
         <div class="grid grid-rows-2 pt-24 lg:pt-0 lg:grid-rows-1">
@@ -76,7 +104,7 @@
         </section>
         <!-- text part -->
         <section>
-            <div class="relative lg:absolute grid grid-cols-1  justify-items-center pl-[10px] lg:pl-[350px] bottom-0 lg:bottom-80">
+            <div class="relative lg:absolute grid grid-cols-1  justify-items-center pl-[10px] lg:pl-[350px] bottom-0 lg:bottom-[260px]">
                 <h3 class="text-5xl font-bold text-center pb-5 ">Exotic tastes at your doorstep</h3>
                 <p class="text-center pb-5">We supply highly quality organic products</p>
                 <button class="btn btn-active bg-[#F85559] text-white border-[#F85559]">Shop Now</button>
@@ -84,7 +112,7 @@
         </section>
         </div>
         <!-- fruit section -->
-        <section class="absolute pl-80 bottom-9 invisible lg:visible">
+        <section class="absolute pl-80 -bottom-2 invisible lg:visible">
             <div class=" grid grid-cols-5 gap-10  text-black bg-white w-[800px] h-[140px] justify-center p-10">
                 <div>
                     <img src="images/fruit1.png" alt="">
